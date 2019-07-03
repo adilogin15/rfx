@@ -250,34 +250,84 @@ width: 70%;
    background-color: #F2F2F2;
 }
 .col-md-3{
-   display: inline-block;
+   display: inline-flex;
    margin-left:-4px;
  }
- .col-md-3 img{
+  .carouseliteminner img{
    width: 16px;
    height:auto;
  }
+
+ /* .carouseliteminner>.displayimg{
+display: -webkit-inline-box!important;
+ } */
+ .carouseliteminner .carouseltext>.carouselimg>img{
+   width: 175px;
+   height:auto;
+   display: inline-block;
+   padding-left:10px;
+   padding-right:10px;
+   margin:0;
+ }
+ .carouseliteminner .carouseltext>.carouselimg>.qvid{
+   width: 70px!important;
+   margin: 0 auto;
+   height:auto;
+   display: inline-block;
+   padding-left:10px;
+   padding-right:10px;
+   margin-left:30px;
+   margin-bottom: 10px;
+ }
+ .carouseliteminner .carouseltext>.qvidtext{
+   font-size: 12px;
+   font-weight: normal;
+   color: #7F7F7F;
+ }
+ #qvidconf1,#qvidconf2{
+    /* margin: 0 auto; */
+    text-align: center;
+ }
+ .caroustext{
+    text-align: center;
+    margin-bottom: 5px;
+ }
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: inline-block;
+    margin: 0;
+}
  .carousel-item>div{
    padding: 30px 28px;
  }
- .carouseliteminner>div:first-child{
+ .carouseliteminner>div:first-child,.carouseliteminner>a>div:first-child,footer>.carouseliteminner>div:first-child{
     float:left;
  }
- .carouseliteminner>div:last-child{
+ .carouseliteminner>div:last-child, .carouseliteminner>a>div:last-child,footer>.carouseliteminner>div:last-child{
  display:grid;
  padding-left:10px;
  padding-right:10px;
  margin:0;
 }
-.carouseliteminner .carouselhead>p{
+.carouseliteminner .carouselhead>p, .carouseliteminner a>.carouselhead>p{
    font-size: 15px;
    font-weight:bold;
    color:#000;
 }
-.carouseliteminner .carouseltext>p{
+.carouseliteminner .carouseltext>p, .carouseliteminner a>.carouseltext>p{
    font-size: 12px;
    font-weight:normal;
    color:#7F7F7F;
+}
+footer>.carouseliteminner{
+display:inline-block;
+}
+footer>.carouseliteminner .carouselhead>span{
+   font-size: 15px;
+   font-weight:bold;
+   color:#000;
+}
+footer>.carouseliteminner .carouselhead{
+   width: fit-content;
 }
 .lineright{
    border-right:1px solid #C0C0C0;
