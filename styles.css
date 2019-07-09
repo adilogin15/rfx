@@ -62,13 +62,16 @@ color: #ffffff;
 border: 1px solid #FFC000;
 /* font-size: 14px; */
 }
-#infographic{
+#infographic,#natdrfx{
 background-color: #E46514;
 color: #ffffff;
 border: 1px solid #E46514;
 float: right;
 font-size: 12px;
 font-weight: 500;
+}
+#natdrfxprocess{
+   float: left;
 }
 #searchicon{
 color: #D9D9D9;
